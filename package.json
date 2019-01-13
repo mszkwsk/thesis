@@ -1,0 +1,22 @@
+{
+  "name": "thesis",
+  "version": "0.0.0",
+  "description": "Start",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mszkwsk/thesis.git"
+  },
+  "keywords": [
+    "thesis"
+  ],
+  "author": "mszkwsk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mszkwsk/thesis/issues"
+  },
+  "homepage": "https://github.com/mszkwsk/thesis#readme"
+}
