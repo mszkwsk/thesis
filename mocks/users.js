@@ -1,0 +1,58 @@
+export const Users = [
+  {
+    id: '',
+    name: '',
+    password: '',
+    picture: '',
+    email: '',
+    projectName: [],
+  },
+  {
+    id: '',
+    name: '',
+    password: '',
+    picture: '',
+    email: '',
+    projectName: [],
+  },
+  {
+    id: '',
+    name: '',
+    password: '',
+    picture: '',
+    email: '',
+    projectName: [],
+  },
+  {
+    id: '',
+    name: '',
+    password: '',
+    picture: '',
+    email: '',
+    projectName: [],
+  },
+  {
+    id: '',
+    name: '',
+    password: '',
+    picture: '',
+    email: '',
+    projectName: [],
+  },
+  {
+    id: '',
+    name: '',
+    password: '',
+    picture: '',
+    email: '',
+    projectName: [],
+  },
+  {
+    id: '',
+    name: '',
+    password: '',
+    picture: '',
+    email: '',
+    projectName: [],
+  }
+]

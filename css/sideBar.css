@@ -1,0 +1,9 @@
+.side-bar {
+  height: 93vh;
+  position: relative;
+  left: 0%;
+  width: 10%;
+  max-width: 150px;
+  border-right: 1px solid grey;
+  background: #E2E6E9;
+}

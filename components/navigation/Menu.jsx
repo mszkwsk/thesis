@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
-import '../css/menu.css'
+import Modal from '../Modal'
+import '../../css/menu.css'
 
 const Menu = () =>  {
   const [createModalOpen, open] = useState(false)
@@ -30,7 +31,7 @@ const Menu = () =>  {
         className = 'menu-button'
         onClick = {() => console.log('klik klik!')}
       >
-      Ustawienia
+        Ustawienia
       </button>
       <button 
         className = 'menu-button'
@@ -38,6 +39,10 @@ const Menu = () =>  {
       >
         Konto
       </button>
+      {createModalOpen && 
+        <Modal
+          handleClose = {() => open(!createModalOpen)}
+        />} 
     </h1>
   )
 }

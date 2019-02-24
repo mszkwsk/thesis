@@ -1,7 +1,8 @@
 import React from 'react'
 import '../css/modal.css'
 
-const Modal = () =>
-  <div className='modal'>
-    
-  </div>
+class Modal extends React.Component {
+  
+}
+
+export default Modal

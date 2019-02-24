@@ -1,8 +1,7 @@
-import Menu from '../components/Menu'
 import '../css/app.css'
+import {Layout} from '../components/Layout'
 
-const Index = () => (
-  <Menu />
-)
+const Index = () =>
+  <Layout />
 
 export default Index
