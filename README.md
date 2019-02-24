@@ -1,1 +1,1 @@
-Start
+This is my enginnering thesis. Also a playground for using next.js. And react hooks of course.
