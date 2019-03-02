@@ -1,9 +1,36 @@
 .side-bar {
-  height: 93vh;
+  height: 95vh;
   position: relative;
   left: 0%;
   width: 10%;
   max-width: 150px;
   border-right: 1px solid grey;
   background: #E2E6E9;
+  float: left;
+}
+
+.side-bar--inactive {
+  height: 95vh;
+  position: relative;
+  left: 0%;
+  width: 2%;
+  border-right: 1px solid grey;
+  background: #E2E6E9;
+  float: left;
+}
+
+
+.switch-side-bar {
+  padding: 12px;
+  position: fixed;
+  bottom: 1%;
+  left: 7%;
+}
+
+
+.switch-side-bar--toggle {
+  padding: 12px;
+  position: fixed;
+  bottom: 1%;
+  left: -1%;
 }

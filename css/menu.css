@@ -6,10 +6,12 @@ h1 {
   background: #15344C;
   font-family: sans-serif;
   margin: 0 auto;
+  font-size: 16px;
 }
 
 h1 > * {
-  margin: 12px 0;
+  /* margin: 12px 0; */
+  padding: 12px;
   color: white;
 }
 
@@ -20,10 +22,22 @@ h1 > * {
 }
 
 .menu-button {
+  display: flex;
+  align-items: center;
   font-weight: bolder;
   background: #728593;
   border: none;
   border-radius: 10px;
   padding: 3px 10px;
   outline: none;
+}
+
+.menu-button-icon {
+  font-weight: bolder;
+  background: #15344C;
+  border: none;
+  border-radius: 10px;
+  padding: 3px 10px;
+  outline: none;
+
 }
