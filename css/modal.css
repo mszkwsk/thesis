@@ -11,11 +11,68 @@
 }
 
 .modal-dialog {
-  position: fixed;
+  color: black;
+  padding: 0;
+  position: absolute;
   top: 10%;
   left: 38%;
   min-width: 400px;
   min-height: 400px;
-  background: white;
-  opacity: 1;
+  background: rgb(255, 255, 255, 1) !important;
+  z-index: 20;
+}
+
+.modal-dialog > h3 {
+  margin: 12px auto 12px 24px;
+}
+
+.modal-dialog-header {
+  background: gainsboro;
+  border-bottom: solid 1px silver;
+  line-height: 2em;
+  margin-top: 0;
+  padding: 6px;
+}
+
+.dropbtn {
+  position: relative;
+  border: 1px solid silver;
+  color: black;
+  font-size: 16px;
+  border: none;
+  width: 100%;
+  padding: 8px;
+}
+
+.dropdown {
+  border: 1px solid silver;
+  padding: 8px 0;
+  position: relative;
+  width: 50%;
+  margin: 12px auto 12px 24px;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  width: 100%;
+  z-index: 1;
+}
+
+.dropdown-content span {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content span:hover {
+  background-color: #ddd;
+}
+
+.modal-dialog-descprition {
+  margin: 24px;
+  width: 100%;
 }
