@@ -1,7 +1,9 @@
-export const Users = [
-  {
+const getUsers = () => {
+  
+  return [
+  { 
     id: '',
-    name: '',
+    name: 'Hye',
     password: '',
     picture: '',
     email: '',
@@ -9,7 +11,7 @@ export const Users = [
   },
   {
     id: '',
-    name: '',
+    name: 'bas',
     password: '',
     picture: '',
     email: '',
@@ -17,7 +19,7 @@ export const Users = [
   },
   {
     id: '',
-    name: '',
+    name: 'zds',
     password: '',
     picture: '',
     email: '',
@@ -56,3 +58,6 @@ export const Users = [
     projectName: [],
   }
 ]
+}
+
+module.exports = {getUsers}

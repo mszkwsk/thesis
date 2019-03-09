@@ -23,7 +23,7 @@
 .switch-side-bar {
   padding: 12px;
   position: fixed;
-  bottom: 1%;
+  bottom: 0.1%;
   left: 7%;
 }
 
@@ -31,6 +31,6 @@
 .switch-side-bar--toggle {
   padding: 12px;
   position: fixed;
-  bottom: 1%;
+  bottom: 0.1%;
   left: -1%;
 }

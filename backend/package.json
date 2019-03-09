@@ -1,0 +1,14 @@
+{
+  "name": "thesis-backend",
+  "version": "0.0.1",
+  "description": "this simple backend for my thesis",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "mszkwsk",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

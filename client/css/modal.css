@@ -11,6 +11,7 @@
 }
 
 .modal-dialog {
+  border-radius: 3px;
   color: black;
   padding: 0;
   position: absolute;
@@ -21,6 +22,7 @@
   background: rgb(255, 255, 255, 1) !important;
   z-index: 20;
 }
+
 
 .modal-dialog > h3 {
   margin: 12px auto 12px 24px;
@@ -46,7 +48,7 @@
 
 .dropdown {
   border: 1px solid silver;
-  padding: 8px 0;
+  /* padding: 8px 0; */
   position: relative;
   width: 50%;
   margin: 12px auto 12px 24px;
