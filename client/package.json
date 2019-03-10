@@ -1,12 +1,11 @@
 {
   "name": "thesis-client",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Start",
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "build": "next build"
   },
   "keywords": [
     "thesis"

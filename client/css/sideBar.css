@@ -4,7 +4,7 @@
   left: 0%;
   width: 10%;
   max-width: 150px;
-  border-right: 1px solid grey;
+  border-right: 1px solid silver;
   background: #E2E6E9;
   float: left;
 }
@@ -14,7 +14,7 @@
   position: relative;
   left: 0%;
   width: 2%;
-  border-right: 1px solid grey;
+  border-right: 1px solid silver;
   background: #E2E6E9;
   float: left;
 }

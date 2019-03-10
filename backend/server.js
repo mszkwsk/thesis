@@ -2,13 +2,32 @@ const express = require('express')
 const app = express()
 const port = 3001
 
-const getUsers = require('./mocks/users')
-const getTasks = require('./mocks/tasks')
+const getUsers = require('./operations/users')
+const getTasks = require('./operations/tasks')
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*")
+  res.header(
+    "Access-Control-Allow-Headers", 
+    "Origin, X-Requested-With, Content-Type, Accept")
+  next()
+});
 
-app.get('/users', (req, res) => res.send(getUsers.getUsers()))
+// Users endpoints
+app.get('/users', 
+  (req, res) => res.send(getUsers.getUsers()))
 
-app.get('/tasks', (req, res) => res.send(getTasks.getTasks()))
+// Tasks endpoints
+app.get('/tasks', 
+  (req, res) => res.send(getTasks.getTasks()))
+app.get('/tasks/latest', 
+  (req, res) => res.send(getTasks.getLatest()))
+app.get('/tasks/getById',
+  (req, res) => res.send(
+    getTasks.getTaskById(req.query.taskId)
+  )
+)
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+
+app.listen(port, () => 
+  console.log(`Thesis backend app listening on port ${port}!`))
