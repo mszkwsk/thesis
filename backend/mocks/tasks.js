@@ -19,7 +19,28 @@ module.exports = [
     dependcies: '', 
     issueType: 'Zadanie',
     sprint: '',
-    taskNumber: 'DT-105'
+    taskNumber: 'DT-105',
+    watchers: 2,
+    priority: 'Ważne',
+    comments: [{
+      author: '',
+      comment: ''
+    }],
+    history: [{
+      date: '2019-02-20',
+      changes: ['Status',
+      {
+        from: 'Otwarte',
+        to: 'W trakcie'
+    }]
+    },{
+      date: '2019-02-20',
+      changes: ['Przepracowano',
+        {
+          from: 0,
+          to: 4
+        }]
+    }]
   },
   {
     id: 'e5ffb83e-7c32-47bf-9a16-80e46bc7e0ab',
@@ -41,7 +62,17 @@ module.exports = [
     dependcies: '', 
     issueType: '',
     sprint: '',
-    taskNumber: 'DT-75'
+    taskNumber: 'DT-75',
+    history: [{
+      date: '',
+      changes: {}
+    },{
+      date: '',
+      changes: {}
+    },{
+      date: '',
+      changes: {}
+    }]
   },
   {
     id: 'c5783c5f-24db-4529-b1aa-0381ae4c3078',
@@ -63,7 +94,17 @@ module.exports = [
     dependcies: '', 
     issueType: '',
     sprint: '',
-    taskNumber: 'DT-20'
+    taskNumber: 'DT-20',
+    history: [{
+      date: '',
+      changes: {}
+    },{
+      date: '',
+      changes: {}
+    },{
+      date: '',
+      changes: {}
+    }]
   },
   {
     id: 'afbf46bb-391b-46bd-a5aa-8a97b7cc91b1',
@@ -85,7 +126,17 @@ module.exports = [
     dependcies: '',
     issueType: '',
     sprint: '',
-    taskNumber: 'PI-200'
+    taskNumber: 'PI-200',
+    history: [{
+      date: '',
+      changes: {}
+    },{
+      date: '',
+      changes: {}
+    },{
+      date: '',
+      changes: {}
+    }]
   },
   {
     id: '04ef8d94-a37e-4902-8946-143ee97ded28',
@@ -107,7 +158,17 @@ module.exports = [
     dependcies: '', 
     issueType: '',
     sprint: '',
-    taskNumber: ''
+    taskNumber: '',
+    history: [{
+      date: '',
+      changes: {}
+    },{
+      date: '',
+      changes: {}
+    },{
+      date: '',
+      changes: {}
+    }]
   },
   {
     id: '96a003b6-5668-4137-9d6d-80b59f1050cf',
@@ -129,7 +190,17 @@ module.exports = [
     dependcies: '', 
     issueType: '',
     sprint: '',
-    taskNumber: ''
+    taskNumber: '',
+    history: [{
+      date: '',
+      changes: {}
+    },{
+      date: '',
+      changes: {}
+    },{
+      date: '',
+      changes: {}
+    }]
   },
   {
     id: '1b47ad45-a04b-4820-b01a-9cd98a0e9c82',
@@ -151,7 +222,17 @@ module.exports = [
     dependcies: '', 
     issueType: '',
     sprint: '',
-    taskNumber: ''
+    taskNumber: '',
+    history: [{
+      date: '',
+      changes: {}
+    },{
+      date: '',
+      changes: {}
+    },{
+      date: '',
+      changes: {}
+    }]
   },
   {
     id: 'ed033c91-c811-4d0b-a0f6-6c1ce406f7ad',
@@ -173,7 +254,17 @@ module.exports = [
     dependcies: '', 
     issueType: '',
     sprint: '',
-    taskNumber: ''
+    taskNumber: '',
+    history: [{
+      date: '',
+      changes: {}
+    },{
+      date: '',
+      changes: {}
+    },{
+      date: '',
+      changes: {}
+    }]
   },
   {
     id: 'a29265db-7238-4faf-9e5a-cdd7fd7b3190',
@@ -195,7 +286,17 @@ module.exports = [
     dependcies: '', 
     issueType: '',
     sprint: '',
-    taskNumber: ''
+    taskNumber: '',
+    history: [{
+      date: '',
+      changes: {}
+    },{
+      date: '',
+      changes: {}
+    },{
+      date: '',
+      changes: {}
+    }]
   },
   {
     id: '70ee8fb0-f24e-4051-807c-5b760158622e',
@@ -217,7 +318,17 @@ module.exports = [
     dependcies: '', 
     issueType: '',
     sprint: '',
-    taskNumber: ''
+    taskNumber: '',
+    history: [{
+      date: '',
+      changes: {}
+    },{
+      date: '',
+      changes: {}
+    },{
+      date: '',
+      changes: {}
+    }]
   },
   {
     id: 'affdb74b-250a-4ba3-9010-0c9e016efc84',
@@ -239,7 +350,17 @@ module.exports = [
     dependcies: '',
     issueType: '',
     sprint: '',
-    taskNumber: ''
+    taskNumber: '',
+    history: [{
+      date: '',
+      changes: {}
+    },{
+      date: '',
+      changes: {}
+    },{
+      date: '',
+      changes: {}
+    }]
   },
   {
     id: '76eacc21-d4c2-4a5a-a328-591fb7940538',
@@ -261,6 +382,16 @@ module.exports = [
     dependcies: '', 
     issueType: '',
     sprint: '',
-    taskNumber: ''
+    taskNumber: '',
+    history: [{
+      date: '',
+      changes: {}
+    },{
+      date: '',
+      changes: {}
+    },{
+      date: '',
+      changes: {}
+    }]
   }
 ]

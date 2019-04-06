@@ -13,45 +13,54 @@
 .modal-dialog {
   border-radius: 3px;
   color: black;
-  padding: 0;
   position: absolute;
-  top: 10%;
+  top: 1%;
   left: 38%;
   min-width: 400px;
   min-height: 400px;
-  background: rgb(255, 255, 255, 1) !important;
+  background: rgba(255, 255, 255, 1) !important;
   z-index: 20;
-}
 
+  &-header {
+    background: gainsboro;
+    border-bottom: solid 1px silver;
+    border-radius: 3px 3px 0 0;
+    line-height: 2em;
+    margin: 0;
+    padding: 6px;
+  }
 
-.modal-dialog > h3 {
-  margin: 12px auto 12px 24px;
-}
+  &-field {
 
-.modal-dialog-header {
-  background: gainsboro;
-  border-bottom: solid 1px silver;
-  line-height: 2em;
-  margin-top: 0;
-  padding: 6px;
+    & > h3 {
+      margin: 6px 0 3px;
+    }
+
+    margin: 6px auto 3px 24px;
+
+    &--inline {
+      display: flex;
+      align-items: center;
+    }
+    & > * {
+      color: black;
+    }
+  }
 }
 
 .dropbtn {
   position: relative;
-  border: 1px solid silver;
-  color: black;
-  font-size: 16px;
   border: none;
+  color: black;
+  font-size: 14px;
   width: 100%;
-  padding: 8px;
+  padding: 6px;
 }
 
 .dropdown {
   border: 1px solid silver;
-  /* padding: 8px 0; */
   position: relative;
   width: 50%;
-  margin: 12px auto 12px 24px;
 }
 
 .dropdown-content {
@@ -72,9 +81,4 @@
 
 .dropdown-content span:hover {
   background-color: #ddd;
-}
-
-.modal-dialog-descprition {
-  margin: 24px;
-  width: 100%;
 }

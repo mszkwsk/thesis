@@ -1,5 +1,4 @@
 import React, {useState, Fragment} from 'react'
-import { red } from '@material-ui/core/colors';
 
 const renderChildren = (children, changePlaceholder, close) =>
   children.map(value => 

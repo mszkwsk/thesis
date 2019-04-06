@@ -2,8 +2,8 @@ const express = require('express')
 const app = express()
 const port = 3001
 
-const getUsers = require('./operations/users')
-const getTasks = require('./operations/tasks')
+const getUsers = require('./controller/users')
+const getTasks = require('./controller/tasks')
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*")
@@ -16,6 +16,8 @@ app.use(function(req, res, next) {
 // Users endpoints
 app.get('/users', 
   (req, res) => res.send(getUsers.getUsers()))
+app.get('/user/getByName',
+  (req, res) => res.send(getUsers.getUserByName(req.query.name)))
 
 // Tasks endpoints
 app.get('/tasks', 

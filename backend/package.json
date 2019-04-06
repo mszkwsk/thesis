@@ -1,6 +1,6 @@
 {
   "name": "thesis-backend",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "this simple backend for my thesis",
   "main": "index.js",
   "scripts": {

@@ -9,10 +9,8 @@ function getLatest() {
     const {creationDate, modificationDate} = element
     if (modificationDate && modificationDate.includes('2019')) {
       return true
-    } else if (creationDate.includes('2019')) {
-      return true
     } else {
-      return false
+      return creationDate.includes('2019')
     }
   }))
 }
@@ -22,7 +20,7 @@ function getTasksCreatedByUser(userName) {
 }
 
 function getTaskById(id) {
-  return tasks.filter((element) => element.id === id)
+  return tasks.find((element) => element.id === id)
 }
 
 module.exports = {

@@ -1,0 +1,68 @@
+.task-container {
+  font-size: 15px;
+  padding: 3px 6px;
+  overflow: hidden;
+
+  &-details {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px silver solid;
+  }
+
+  &-info {
+    & div {
+      border-radius: 3px;
+      margin: 6px;
+      padding: 4px;
+    }
+
+    &--additonal {
+      flex-basis: 260px;
+      flex-shrink: 0;
+
+      & div {
+        border-bottom: 1px silver solid;
+      }
+    }
+  }
+
+  &-desc {
+    margin: 4px;
+    padding: 4px;
+    max-width: 1000px;
+  }
+
+  &-history {
+    &-change {
+      display:flex;
+      align-items: center;
+    }
+  }
+}
+
+.task-action-button {
+  border: none;
+  border-radius: 3px;
+  margin: 0 10px;
+  padding: 6px;
+  font-weight: bold ;
+}
+
+.task-start-watching-button {
+  background: white;
+  border: 1px solid silver;
+  border-radius: 3px;
+}
+
+.task-tab {
+  display: flex;
+  align-items: center;
+
+  &-header {
+    margin: 6px 18px 0;
+
+    &--selected {
+      font-size: 20px;
+    }
+  }
+}

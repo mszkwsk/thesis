@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {ChevronRight, ChevronLeft} from '@material-ui/icons'
 
 import IconButton from '../common/IconButton'
-import '../../css/sideBar.css'
+import '../../scss/sideBar.scss'
 
 const renderChevron = isToggled =>
   isToggled ? <ChevronLeft /> : <ChevronRight/>

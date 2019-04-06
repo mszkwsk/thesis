@@ -5,7 +5,7 @@ const getUsers = () => {
 }
 
 const getUserByName = (userName) => {
-  return users.find(element.name === userName)
+  return users.find(element => element.name === userName)
 }
 
 module.exports = {

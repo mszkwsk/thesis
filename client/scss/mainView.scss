@@ -1,0 +1,27 @@
+.main-view {
+  overflow: hidden;
+
+  &__task {
+    &-title {
+      margin: 9px 3px 6px;
+      padding: 4px;
+    }
+
+    &-info {
+      border: 1px solid silver;
+      border-radius: 3px;
+      padding: 3px 6px;
+      margin: 0 6px 0 6px;
+    }
+
+    &-desc {
+      margin: 4px;
+      padding: 6px;
+      border-bottom: 1px solid silver;
+    }
+  }
+
+  &-header {
+    padding: 3px 6px;
+  }
+}

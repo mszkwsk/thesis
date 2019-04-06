@@ -1,6 +1,6 @@
 import fetch from 'isomorphic-unfetch'
 
-import '../css/app.css'
+import '../scss/app.scss'
 import {Layout} from '../components/Layout'
 import MainView from '../components/MainView'
 
