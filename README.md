@@ -1,6 +1,6 @@
 This is my enginnering thesis. Also a playground for using next.js. And react hooks of course.
 
-And as a disclaimer. It's more of a POC or a prototype than appropriate solution. It will be one time presented only, so there will be some dirty hacks here and strange solutions.
+And as a disclaimer. It's more of a POC or a prototype than produciton ready solution.
 
 Client is a prerendering service handle via next.js
 
