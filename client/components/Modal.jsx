@@ -1,6 +1,10 @@
-import React, {Fragment} from 'react'
+import React from 'react'
+import ReactDOM from 'react-dom'
 import Dropdown from '../components/common/Dropdown'
 import '../scss/modal.scss'
+
+const Portal = ({children}) =>
+    ReactDOM.createPortal(<div>{children}</div>, document.body)
 
 class Modal extends React.Component {
   constructor(props) {
@@ -30,7 +34,7 @@ class Modal extends React.Component {
     const {issueType, projects, users} = this.state
 
     return (
-      <Fragment>
+      <Portal>
         <div
           className='modal-dim'
           onClick={() => close()}
@@ -84,7 +88,7 @@ class Modal extends React.Component {
             </button>
           </div>
         </div>
-      </Fragment>
+      </Portal>
     )
   }
 }

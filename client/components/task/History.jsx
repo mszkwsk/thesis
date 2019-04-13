@@ -3,11 +3,14 @@ import {ArrowRight} from "@material-ui/icons"
 
 const renderChanges = (history) => {
   if(history.length > 0) {
-    return history.map(change => {
+    return history.map((change, idx) => {
       const {date, changes} = change
       const [changeName, valueChange] = changes
       return (
-        <div>
+        <div
+          key={idx}
+          className='task-container-history'
+        >
           <h5>Data: {date} </h5>
           <div>{changeName}</div>
           <div className='task-container-history-change'>
@@ -20,8 +23,8 @@ const renderChanges = (history) => {
 }
 
 const History = ({history}) =>
-  <div className='task-container-history'>
+  <React.Fragment>
     {renderChanges(history)}
-  </div>
+  </React.Fragment>
 
 export default History

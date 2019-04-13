@@ -1,14 +1,21 @@
 import React from 'react'
 
-const Comments = (comments) =>
-  <div>
+const Comments = ({comments}) =>
+  <React.Fragment>
     {comments.length ?
-    comments.map(comment =>
-      <div>
-        {comment.author}
+    comments.map((comment, idx) =>
+      <div
+        key={idx}
+        className='task-container-comment'
+      >
+        Autor: {comment.author}
         <section>{comment.comment}</section>
       </div>
-    ) : 'Nie ma żadnych komentarzy'}
-  </div>
+    ) : (
+      <div className='task-container-comment'>
+        Nie ma żadnych komentarzy
+      </div>
+    )}
+  </React.Fragment>
 
 export default Comments

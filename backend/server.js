@@ -18,6 +18,8 @@ app.get('/users',
   (req, res) => res.send(getUsers.getUsers()))
 app.get('/user/getByName',
   (req, res) => res.send(getUsers.getUserByName(req.query.name)))
+app.get('/user/getById',
+  (req, res) => res.send(getUsers.getUserById(req.query.id)))
 
 // Tasks endpoints
 app.get('/tasks', 

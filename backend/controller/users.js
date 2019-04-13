@@ -5,10 +5,15 @@ const getUsers = () => {
 }
 
 const getUserByName = (userName) => {
-  return users.find(element => element.name === userName)
+  return users.find(user => user.name === userName)
+}
+
+const getUserById = (id) => {
+  return users.find(user => user.id === id)
 }
 
 module.exports = {
   getUsers,
-  getUserByName
+  getUserByName,
+  getUserById,
 }

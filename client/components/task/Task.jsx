@@ -23,14 +23,17 @@ const Task = ({task, author, assignedTo}) => {
   } = task
   const priority = 'Ważne'
   const watchers = 2
-  const comments = [{author: '', comment:''}]
+  const comments = [{
+    author: 'Kowalski Junior',
+    comment:'Brakuje dobrze zdefiniowanych wymagań do pracy nad tą historyjką'
+  }]
 
   return (
     <div className='task-container'>
       <span>{project} / {taskNumber}</span>
-      <h4>
+      <h2>
         <span>{title}</span>
-      </h4>
+      </h2>
       <div className='task-container-actions'>
         <button className='task-action-button'>Edytuj</button>
         <button className='task-action-button'>Komentuj</button>
@@ -41,7 +44,7 @@ const Task = ({task, author, assignedTo}) => {
       <div className='task-container-details'>
         <div>
           <div className='task-container-info'>
-            <h4>Informacje</h4>
+            <h3>Informacje</h3>
             <div>Typ encji: {issueType}</div>
             <div>Priorytet: {priority}</div>
             <div>Status: {status}</div>
@@ -56,7 +59,7 @@ const Task = ({task, author, assignedTo}) => {
           </div>
         </div>
         <div className='task-container-info task-container-info--additonal'>
-          <h4>Osoby</h4>
+          <h3>Osoby</h3>
           <div>Autor: {author.displayName}</div>
           <div>Przypisany: {assignedTo ?
               assignedTo.displayName : 'Nieprzypisany'}</div>
@@ -66,11 +69,11 @@ const Task = ({task, author, assignedTo}) => {
               Zacznij obserwować
             </button>
           </div>
-          <h4>Daty</h4>
+          <h3>Daty</h3>
           <div>Utworzono: {creationDate}</div>
           <div>Modyfikowano: {resolvedDate ?
             resolvedDate : modificationDate}</div>
-          <h4>Zalogowany czas </h4>
+          <h3>Zalogowany czas </h3>
           <div>Przepracowno: {workLog} </div>
         </div>
       </div>
