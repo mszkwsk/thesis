@@ -12,7 +12,8 @@ class Modal extends React.Component {
     this.state = {
       projects: ['Donut', 'Doit', 'Placki', 'Smieszne'],
       issueType: ['Historyjka', 'Błąd', 'Zadanie', 'Defekt'],
-      users: []
+      users: [],
+      preventFromClosing: false
     }
   }
 
@@ -25,7 +26,7 @@ class Modal extends React.Component {
       })
   }
 
-  renderMandatory() {
+  static renderMandatory() {
     return <span style={{color: 'red'}}>*</span>
   }
 
@@ -42,50 +43,60 @@ class Modal extends React.Component {
         <div className = 'modal-dialog'>
           <h2 className = 'modal-dialog-header'>Stwórz encję</h2>
           <div className='modal-dialog-field modal-dialog-field--inline'>
-            <h5>
+            <h3>
               Projekty {this.renderMandatory()}
-            </h5>
+            </h3>
             <Dropdown children = {projects}/>
           </div>
           <div className='modal-dialog-field modal-dialog-field--inline'>
-            <h5>
+            <h3>
               Typ encji {this.renderMandatory()}
-            </h5>
+            </h3>
             <Dropdown children = {issueType}/>
           </div>
           <div className='modal-dialog-field modal-dialog-field--inline'>
-            <h5>
+            <h3>
               Tytuł {this.renderMandatory()}
-            </h5>
+            </h3>
             <input type ='text' />
           </div>
           <div className='modal-dialog-field modal-dialog-field--inline'>
-            <h5>Priorytet</h5>
+            <h3>Priorytet</h3>
             <Dropdown children = {['otwarte', 'zamkniete', 'code reivew', 'w trakcie']}/>
           </div>
           <div className='modal-dialog-field modal-dialog-field--inline'>
-            <h5>Przypisany</h5>
+            <h3>Przypisany</h3>
             <Dropdown children = {users}/>
           </div>
           <div className='modal-dialog-field'>
-            <h5>Opis</h5>
+            <h3>Opis</h3>
             <textarea
               rows = {5}
               cols = {45}
             />
           </div>
           <div className='modal-dialog-field modal-dialog-field--inline'>
-            <h5> Estymacja </h5>
+            <h3> Estymacja </h3>
             <input type ='text' />
           </div>
-          <div>
-            <input type='checkbox' /> Utwórz kolejne
-            <button
-              style={{display: 'block'}}
-              onClick={() => console.log('cyk, zapisane!')}
-            >
-              Zapisz
-            </button>
+          <div className='modal-dialog-operations'>
+            <div>
+              <input
+                type='checkbox'
+                onClick={()=> this.setState({preventFromClosing: true})}
+              />
+              Utwórz kolejne
+            </div>
+            <div className='modal-dialog-operations-buttons'>
+              <button onClick={() =>
+                !this.state.preventFromClosing && close()}
+              >
+                Zapisz
+              </button>
+              <button onClick={() => close()}>
+                Anuluj
+              </button>
+            </div>
           </div>
         </div>
       </Portal>
