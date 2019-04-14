@@ -1,6 +1,7 @@
 import React from 'react'
 import Dropdown from '../components/common/Dropdown'
 import '../scss/modal.scss'
+import {Button} from "./common/Button";
 
 class CreateTask extends React.Component {
   constructor(props) {
@@ -37,13 +38,13 @@ class CreateTask extends React.Component {
           <h3>
             Projekty {this.renderMandatory()}
           </h3>
-          <Dropdown children = {projects}/>
+          <Dropdown list = {projects}/>
         </div>
         <div className='modal-dialog-field modal-dialog-field--inline'>
           <h3>
             Typ encji {this.renderMandatory()}
           </h3>
-          <Dropdown children = {issueType}/>
+          <Dropdown list = {issueType}/>
         </div>
         <div className='modal-dialog-field modal-dialog-field--inline'>
           <h3>
@@ -53,11 +54,11 @@ class CreateTask extends React.Component {
         </div>
         <div className='modal-dialog-field modal-dialog-field--inline'>
           <h3>Priorytet</h3>
-          <Dropdown children = {['otwarte', 'zamkniete', 'code reivew', 'w trakcie']}/>
+          <Dropdown list = {['otwarte', 'zamkniete', 'code reivew', 'w trakcie']}/>
         </div>
         <div className='modal-dialog-field modal-dialog-field--inline'>
           <h3>Przypisany</h3>
-          <Dropdown children = {users}/>
+          <Dropdown list = {users}/>
         </div>
         <div className='modal-dialog-field'>
           <h3>Opis</h3>
@@ -86,12 +87,10 @@ class CreateTask extends React.Component {
             >
               Zapisz
             </button>
-            <button
-              className='action-button'
-              onClick={() => close()}
-            >
-              Anuluj
-            </button>
+            <Button
+              onClick={close}
+              label='Anuluj'
+            />
           </div>
         </div>
       </div>

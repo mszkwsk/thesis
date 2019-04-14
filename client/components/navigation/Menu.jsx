@@ -51,8 +51,8 @@ const Menu = () =>  {
       {userModalOpen &&
       <Modal close ={() => openUser(false)}>
         <User
-            userId={'14b9e5f8-8edd-44c5-a96e-f6c9805966fb'}
-            close ={() => openUser(false)}
+          userId={'14b9e5f8-8edd-44c5-a96e-f6c9805966fb'}
+          close ={() => openUser(false)}
         />
       </Modal>
       }

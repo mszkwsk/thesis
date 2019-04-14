@@ -1,7 +1,7 @@
 import React, {useState, Fragment} from 'react'
-
-const renderChildren = (children, changePlaceholder, close) =>
-  children.map(value => 
+import {ArrowDropDown} from '@material-ui/icons'
+const renderChildren = (list, changePlaceholder, close) =>
+    list.map(value =>
     <span 
       onClick = {(e) => {
         console.log(e)
@@ -14,7 +14,7 @@ const renderChildren = (children, changePlaceholder, close) =>
     </span>)
 
 const Dropdown = (props) => {
-  const {children} = props
+  const {list} = props
   const [placeholder, select] = useState('Proszę wybrać')
   const [isOpen, open] = useState(false)
 
@@ -25,11 +25,11 @@ const Dropdown = (props) => {
           className="dropbtn"
           onClick = {() => open(!isOpen)}
         >
-          {placeholder}
+          {placeholder} <ArrowDropDown style={{fontSize: 14}}/>
         </div>
         {isOpen && 
           <div className="dropdown-content">
-            {renderChildren(children, select, open)}
+            {renderChildren(list, select, open)}
           </div>}
       </div>
     </Fragment>

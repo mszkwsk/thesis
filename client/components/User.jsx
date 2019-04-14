@@ -1,5 +1,9 @@
 import React from 'react'
 import '../scss/user.scss'
+import Dropdown from "./common/Dropdown";
+import {Button} from "./common/Button";
+
+const communiaction = []
 
 class User extends React.Component {
   constructor(props) {
@@ -42,17 +46,35 @@ class User extends React.Component {
           </div>
           <div>
             <h3>Prefrencje</h3>
+            <div className='user-field user-field-settings'>
+              Typ komunikacji: <Dropdown list={communiaction}/>
+            </div>
+            <div className='user-field user-field-settings'>
+              Język
+            </div>
+            <div className='user-field user-field-settings'>
+              Strefa czasowa <Dropdown list={[]}/>
+            </div>
+            <div className='user-field user-field-settings'>
+              Skróty klawiszowe
+            </div>
+            <div className='user-field user-field-settings'>
+              Powiadom o moich zmianach
+            </div>
           </div>
-          <div>
+          <div className='user-projects'>
             <h3>Projekty</h3>
+            Lista projektów:
+            {projectName &&
+              projectName.map(v =>
+                <div>{v}</div>)
+            }
           </div>
-        <button
-          className='action-button'
-          style={{float: 'right'}}
-          onClick = {() => this.props.close()}
-        >
-          Zamknij
-        </button>
+          <Button
+            onClick={this.props.close}
+            style={{float: 'right'}}
+            label='Zamknij'
+          />
         </div>
       </div>
     )
