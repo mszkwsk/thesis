@@ -1,71 +1,58 @@
-.modal {
-  &-dim {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: grey;
-    opacity: 0.5;
-    z-index: 10;
+.modal-dialog {
+  position: absolute;
+  border-radius: 3px;
+  color: black;
+  top: 4%;
+  left: 38%;
+  min-width: 400px;
+  min-height: 400px;
+  background: rgba(255, 255, 255, 1) !important;
+  z-index: 20;
+
+
+  &-header {
+    border-bottom: solid 1px silver;
+    border-radius: 3px 3px 0 0;
+    line-height: 2em;
+    margin: 0;
+    padding: 6px;
   }
 
-  &-dialog {
-    position: absolute;
-    border-radius: 3px;
-    color: black;
-    top: 1%;
-    left: 38%;
-    min-width: 400px;
-    min-height: 400px;
-    background: rgba(255, 255, 255, 1) !important;
-    z-index: 20;
+  &-field {
+    margin: 6px auto 3px 24px;
 
-
-    &-header {
-      background: gainsboro;
-      border-bottom: solid 1px silver;
-      border-radius: 3px 3px 0 0;
-      line-height: 2em;
-      margin: 0;
-      padding: 6px;
-    }
-
-    &-field {
-      margin: 6px auto 3px 24px;
-
-      &--inline {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-
-        .dropdown, input[type='text'] {
-          position: relative;
-          right: 7%;
-        }
-
-        input[type='text'] {
-          font-size: 14px;
-          padding: 6px;
-        }
-      }
-
-      & > * {
-        color: black;
-      }
-    }
-
-    &-operations {
+    &--inline {
+      align-items: center;
       display: flex;
       justify-content: space-between;
-      padding: 6px 24px;
 
-      &-buttons > button {
-        margin: 0 3px;
+      .dropdown, input[type='text'] {
+        position: relative;
+        right: 7%;
       }
+
+      input[type='text'] {
+        font-size: 14px;
+        padding: 6px;
+      }
+    }
+
+    & > * {
+      color: black;
+    }
+  }
+
+  &-operations {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 24px;
+
+    &-buttons > button {
+      margin: 0 3px;
     }
   }
 }
+
 
 .dropbtn {
   position: relative;

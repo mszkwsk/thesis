@@ -1,10 +1,9 @@
 h1 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   background: #15344C;
-  font-family: sans-serif;
   margin: 0 auto;
   font-size: 16px;
 
@@ -17,6 +16,7 @@ h1 {
   border: none;
   border-radius: 3px;
   padding: 3px 10px;
+  margin: 6px;
 }
 
 .menu-button {
@@ -28,6 +28,15 @@ h1 {
   border-radius: 10px;
   padding: 0 10px;
   outline: none;
+  cursor: pointer;
+}
+
+.menu-item {
+  padding: 2px 4px;
+  border-radius: 3px;
+  border-top: #728593 2px solid;
+  border-bottom: #728593 2px solid;
+  cursor: pointer;
 }
 
 .menu-button-icon {
@@ -37,4 +46,11 @@ h1 {
   border-radius: 10px;
   padding: 3px 10px;
   outline: none;
+  cursor: pointer;
+}
+
+.menu-section {
+  display: flex;
+  justify-content: space-around;
+  width: 430px;
 }

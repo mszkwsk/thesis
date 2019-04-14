@@ -1,0 +1,35 @@
+.user {
+  &-modal {
+    position: absolute;
+    background: white;
+    top: 4%;
+    min-width: 380px;
+    left: 35%;
+    padding: 0 24px 24px;
+    z-index: 10;
+
+    & > h2 {
+      border-bottom: 1px solid silver;
+      min-height: 28px;
+    }
+  }
+
+  &-info {
+    min-height: 116px;
+  }
+
+  &-field {
+    display: flex;
+
+    &-info {
+      justify-content: space-between;
+      * {
+        display: block;
+      }
+
+      &:last-child {
+        text-align: left;
+      }
+    }
+  }
+}

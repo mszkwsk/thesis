@@ -17,9 +17,11 @@ app.use(function(req, res, next) {
 app.get('/users', 
   (req, res) => res.send(getUsers.getUsers()))
 app.get('/user/getByName',
-  (req, res) => res.send(getUsers.getUserByName(req.query.name)))
+  (req, res) => res.send(
+    getUsers.getUserByName(req.query.name)))
 app.get('/user/getById',
-  (req, res) => res.send(getUsers.getUserById(req.query.id)))
+  (req, res) => res.send(
+    getUsers.getUserById(req.query.id)))
 
 // Tasks endpoints
 app.get('/tasks', 
@@ -31,7 +33,6 @@ app.get('/tasks/getById',
     getTasks.getTaskById(req.query.taskId)
   )
 )
-
 
 app.listen(port, () => 
   console.log(`Thesis backend app listening on port ${port}!`))
